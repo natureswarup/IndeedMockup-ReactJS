@@ -1,15 +1,9 @@
+:root {
+  --navyBlue: #2557a7;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.searchContainer {
-  max-width: 100%;
-  height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 
 nav {
   max-width: 100%;
   height: 7vh;
-  border-bottom: .5px solid grey;
+  border-bottom: 0.5px solid grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -11,7 +11,7 @@ nav {
 }
 
 .logo {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   color: blue;
 }
 
@@ -19,7 +19,9 @@ nav {
   cursor: pointer;
 }
 
-.leftLinks, .rightLinks, .navLinks {
+.leftLinks,
+.rightLinks,
+.navLinks {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -28,12 +30,12 @@ nav {
   margin: 0 15px;
 }
 
-
-.rightLinks span{
+.rightLinks span {
   display: inline-block;
 }
 
-.navLinks li, .rightLinks span {
+.navLinks li,
+.rightLinks span {
   list-style-type: none;
   margin: 0 15px;
   height: 100%;
@@ -41,12 +43,17 @@ nav {
   align-items: center;
 }
 
-.navLinks li:hover,.rightLinks span:hover {
+.navLinks li:hover,
+.rightLinks span:hover {
   border-bottom: 1px solid blue;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .navLinks li {
     display: none;
+  }
+
+  nav {
+    border: none;
   }
 }
