@@ -1,9 +1,69 @@
 :root {
   --navyBlue: #2557a7;
+  --lightPink: #faf9f8;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.recentSearchContainer {
+  height: 60vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lightPink);
+}
+
+.recentSearchContainer--header {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.recentSearchContainer--header button {
+  padding: 10px;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.recentSearchContainer--header button:hover {
+  opacity: 0.5;
+}
+
+.searchInfoContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInfo {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.searchInfo--data p:first-child {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.searchInfo--data p .positions {
+  color: rgba(128, 0, 128, 0.829);
 }
