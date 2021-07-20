@@ -4,35 +4,38 @@ import "./App.css";
 import Nav from "./components/nav/nav.component";
 import Search from "./components/search/search.component";
 import searches from "./searchData";
+import RecentSearches from "./components/recentSearches/recentSearches.component";
 
 function App() {
-  const [recentSearches, setRecentSearches] = useState(searches);
+  const [previousSearches, setPreviousSearches] = useState(searches);
   return (
     <div className="App">
       <Nav />
       <Search />
-      <div className="recentSearchContainer">
-        <div className="recentSearchContainer--header">
-          <h3>Recent searches</h3>
-          <button>Edit</button>
+      <RecentSearches data={previousSearches} />
+      <div className="separator"></div>
+      <footer>
+        <div className="indeedStat">
+          <p>
+            Indeed helps people get jobs:{" "}
+            <span>Over 16 million stories shared</span>
+          </p>
         </div>
-        <div className="searchInfoContainer">
-          {recentSearches.map((search) => {
-            return (
-              <div className="searchInfo">
-                <div className="searchInfo--data">
-                  <p>{search.search}</p>
-                  <p>
-                    <span className="positions">{search.newPositions}</span> new
-                    positions
-                  </p>
-                </div>
-                <span class="material-icons">chevron_right</span>
-              </div>
-            );
-          })}
+        <div className="siteMap">
+          <ul>
+            <li>Hiring Lab</li>
+            <li>Career Advice</li>
+            <li>Browse Jobs</li>
+            <li>Browse Companies</li>
+            <li>Salaries</li>
+            <li>Find Certifications</li>
+            <li>Indeed Events</li>
+            <li>Work at Indeed</li>
+            <li>Help Center</li>
+            <li>About</li>
+          </ul>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
