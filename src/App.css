@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+.App {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 .separator {
   background-color: var(--lightPink);
   height: 50px;
@@ -29,6 +34,7 @@
 
 .siteMap ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   margin-bottom: 20px;

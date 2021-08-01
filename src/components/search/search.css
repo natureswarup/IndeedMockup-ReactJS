@@ -5,14 +5,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .inputs {
-  position: relative;
-  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
 }
 
 .inputs #jobSearch,
@@ -38,22 +38,6 @@ input[type="text"]::placeholder {
   font-size: 20px;
 }
 
-.inputs--what,
-.inputs--where {
-  position: absolute;
-  font-weight: 500;
-  font-size: 20px;
-  /* top: 5px; */
-}
-
-.inputs--what {
-  left: 14px;
-}
-
-.inputs--where {
-  left: 425px;
-}
-
 .inputs--btn {
   padding: 8px;
   background-color: var(--navyBlue);
@@ -75,6 +59,7 @@ input[type="text"]::placeholder {
 .employersLink span {
   color: var(--navyBlue);
   font-weight: 700;
+  display: inline-block;
 }
 
 .employersLink span:hover {
@@ -84,18 +69,19 @@ input[type="text"]::placeholder {
 
 @media only screen and (max-width: 1000px) {
   .inputs {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+    height: 100%;
   }
   .inputs #jobSearch,
   .inputs #citySearch {
     display: block;
-    height: 40px;
+    min-height: 40px;
     width: 80%;
     border-radius: 10px;
     /* margin: 0 5px; */
@@ -114,5 +100,18 @@ input[type="text"]::placeholder {
     border: none;
     width: 80%;
     display: block;
+  }
+}
+
+@media screen and (max-height: 950px) {
+  .searchContainer {
+    min-height: 100px;
+    margin-top: 10px;
+    border: 1px solid yellow;
+  }
+  .inputs {
+    min-height: 100px;
+    margin-top: 20px;
+    padding: 20px;
   }
 }
