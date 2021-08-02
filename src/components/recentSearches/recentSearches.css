@@ -38,7 +38,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   margin-bottom: 20px;
 }
 
@@ -60,4 +59,30 @@
 
 .searchInfo--data p .positions {
   color: rgba(128, 0, 128, 0.829);
+}
+
+@media screen and (max-height: 1000px) {
+  .recentSearchContainer {
+    min-height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recentSearchContainer {
+    min-height: 600px;
+  }
+
+  .recentSearchContainer--header {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .recentSearchContainer--header button {
+    display: none;
+  }
+
+  .recentSearchContainer .searchInfoContainer .searchInfo {
+    width: 50%;
+  }
 }

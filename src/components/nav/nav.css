@@ -9,7 +9,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .logo {
@@ -58,8 +57,25 @@ nav {
 
   nav {
     /* border: none; */
-    margin: 15px;
+    margin: 15px 0;
     min-height: 50px;
-    border: 1px solid blue;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (max-height: 1000px) {
+  .navLinks li {
+    display: none;
+  }
+
+  nav {
+    /* border: none; */
+    margin: 15px 0;
+    min-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rightLinks span:last-child {
+    display: none;
   }
 }

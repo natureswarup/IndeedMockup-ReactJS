@@ -17,8 +17,6 @@ const Seach = () => {
           placeholder='City, state, zip, or "remote"'
         />
 
-        {/* <span className="inputs--what">What</span>
-          <span className="inputs--where">Where</span> */}
         <button className="inputs--btn">Find Jobs</button>
       </div>
       <p className="employersLink">
